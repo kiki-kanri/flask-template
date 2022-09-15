@@ -41,7 +41,7 @@ def createapp(args):
 def init():
     os.system('sudo python3.10 -m pip install -r requirements.txt')
     copyfile('./env.example.sh', './env.sh')
-    copyfile('./main/app_config.example.py', './main/app_config.py')
+    copydir('./instance_example', './instance')
     print('初始化完成！請設定檔案之後再啟動應用程序。')
 
 

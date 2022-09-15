@@ -4,7 +4,7 @@ from kikiutils.string import s2b
 from typing import Callable
 
 
-def hash(fnc: Callable[..., hashlib._Hash], text: str | bytes, return_bytes: bool) -> str | bytes:
+def hash(fnc: Callable, text: str | bytes, return_bytes: bool) -> str | bytes:
     return fnc(s2b(text)).digest() if return_bytes else fnc(s2b(text)).hexdigest()
 
 
