@@ -1,5 +1,4 @@
-from kikiutils.time import now_time_utc
-from mongoengine import Document, fields, QuerySet
+from mongoengine import Document, QuerySet
 
 
 class BaseModel(Document):

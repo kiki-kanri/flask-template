@@ -1,6 +1,6 @@
 ### Dockerfile
 
-FROM python:3.10.7-slim
+FROM python:3.11-slim
 LABEL org.opencontainers.image.authors="kiki-kanri"
 LABEL version="1.0"
 
